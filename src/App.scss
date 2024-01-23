@@ -1,0 +1,16 @@
+@use "./assets/SCSS/" as *;
+
+.container {
+    width: min(100% - 0.5rem, 375px);
+    margin: 0 auto;
+    transition: 250ms ease-in-out;
+}
+
+// Tablet size 1440px
+@media (min-width: 768px) {
+    .container {
+      width: min(100% - 0.5rem, 1440px);
+      margin: 0 auto;
+      transition: 250ms ease-in-out;
+    }
+}
