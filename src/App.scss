@@ -1,5 +1,25 @@
 @use "./assets/SCSS/" as *;
 
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: $vietnam;
+  font-size: 1rem;
+  background-color: $very-light-gray;
+}
+
+button {
+  cursor: pointer;
+}
+
 .container {
     width: min(100% - 0.5rem, 375px);
     margin: 0 auto;
@@ -7,7 +27,7 @@
 }
 
 // Tablet size 1440px
-@media (min-width: 768px) {
+@media (min-width: 835px) {
     .container {
       width: min(100% - 0.5rem, 1440px);
       margin: 0 auto;
