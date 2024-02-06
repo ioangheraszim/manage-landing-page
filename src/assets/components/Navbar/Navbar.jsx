@@ -6,8 +6,10 @@ import "./Navbar.scss"
 function Navbar() {
   return (
     <nav className='navbar'>
-      <img src={logoIcon} alt="" />
-      <ul className='navbar-items active'>
+      <div>
+        <a href="#"><img src={logoIcon} alt={logoIcon} /></a>
+      </div>
+      <ul className='navbar-items'>
         <li><a href="">Pricing</a></li>
         <li><a href="">Product</a></li>
         <li><a href="">About Us</a></li>
