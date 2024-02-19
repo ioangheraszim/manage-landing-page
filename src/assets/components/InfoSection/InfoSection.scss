@@ -1,0 +1,76 @@
+@use "../../SCSS/" as *;
+
+.question {
+  text-align: center;
+  margin-top: 3rem;
+
+  h2 {
+    padding: 1rem;
+    font-size: 2.2rem;
+    color: $dark-blue;
+  }
+
+  p {
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+    color: $dark-grayish-blue;
+    line-height: 1.5rem;
+  }
+}
+
+.answers {
+  .answer {
+    margin-top: 3rem;
+    .title {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      font-weight: 700;
+      background-color: $very-pale-red;
+      border-radius: 1.5rem 0rem 0 1.5rem;
+      margin-bottom: 1rem;
+
+      .number {
+        padding: 0.7rem 2rem;
+        background-color: $bright-red;
+        border-radius: 1.6rem;
+        color: $very-light-gray;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .the-answer {
+    margin: 0.5rem 0;
+    color: $dark-grayish-blue;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 835px) {
+  .container-qa {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .question {
+    text-align: start;
+    p {
+        padding-right: 5rem;
+    }
+  }
+
+  .answers {
+    .answer {
+        padding-left: 6rem;
+        .title {
+            background-color: transparent;
+        }
+    }
+
+    .the-answer {
+        padding-left: 6rem;
+    }
+  }
+}

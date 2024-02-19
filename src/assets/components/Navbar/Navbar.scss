@@ -45,7 +45,13 @@
 
     .navbar-items.active {
         transform: scaleY(1);
-        transition: 150ms ease-in;
+        transition: 150ms ease-in;        
+    }
+
+    @media (min-width: 835px) {
+        .navbar-items {
+            transform: scale(1);
+        }
     }
 
     .btn-start {
@@ -75,21 +81,6 @@
                 padding: 1rem; 
                
             }
-        }
-
-        .btn-start {
-            background-color: $bright-red;
-            border: none;
-            font-family: $vietnam;
-            font-weight: 500;
-            color: $very-light-gray;
-            padding: 1rem 2.25rem;
-            border-radius: 1.5rem;
-        }
-
-        .btn-start:hover {
-            opacity: .75;
-            box-shadow: 0px 5px 15px $bright-red;
         }
 
         .toggle-menu {
