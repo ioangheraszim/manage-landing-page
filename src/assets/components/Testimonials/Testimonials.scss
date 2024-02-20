@@ -1,2 +1,58 @@
 @use "../../SCSS/" as *;
 
+h2 {
+  margin: 3rem 0;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slider-card {
+  margin: 3rem 0;
+
+  .slider {
+    background-color: $very-light-gray;
+    margin: 2rem 0;
+    position: relative;
+
+    .the-image {
+      position: absolute;
+      top: -7rem;
+      left: 55%;
+      transform: translate(-50%, 50%);
+      img {
+        width: 75%;
+      }
+    }
+
+    .name {
+      text-align: center;
+      margin: 1rem 0;
+      padding: 5rem 0 0 0;
+    }
+
+    .comment {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin: 0.5rem 0;
+      color: $dark-grayish-blue;
+    }
+  }
+}
+
+@media (min-width: 835px) {
+  .slider-card {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    justify-content: space-between;
+
+    .slider {
+      margin: 1rem;
+      width: 70%;
+    }
+  }
+}

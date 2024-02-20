@@ -1,1 +1,36 @@
 @use "../../SCSS/" as *;
+
+.simplead-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bright-red;
+    margin-top: 4rem;
+    padding: 3rem;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .btn-ad {
+        background-color: white;
+        color: $bright-red;
+        font-weight: 700;
+    }
+    .ad-text {
+        color: white;
+    }
+}
+
+@media (min-width: 835px) {
+    .simplead-wrapper {
+        
+        .content {
+            flex-direction: row;
+        }
+    }
+    
+}

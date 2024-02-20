@@ -4,7 +4,7 @@ import './HeroSection.scss'
 
 function HeroSection() {
   return (
-    <section className='wrapper'>
+    <section className='container wrapper'>
       <div className='illustration'>
         <img src={heroImg} alt="" />
       </div>

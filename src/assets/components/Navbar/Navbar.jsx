@@ -11,7 +11,7 @@ function Navbar() {
     setToggle(!toggle)
   }
   return (
-    <nav className='navbar'>
+    <nav className='container navbar'>
       <div>
         <a href="#"><img src={logoIcon} alt={logoIcon} /></a>
       </div>

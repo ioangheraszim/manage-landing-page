@@ -65,7 +65,9 @@
     }
 
     @media (min-width: 835px)  {
-
+        .navbar-items {
+            background-color: white;
+        }
         .navbar-items, .btn-start {
             display: flex;
         }
