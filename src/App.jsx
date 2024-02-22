@@ -1,4 +1,5 @@
 import './App.scss'
+import Footer from './assets/components/Footer/Footer'
 import HeroSection from './assets/components/HeroSection/HeroSection'
 import InfoSections from './assets/components/InfoSection/InfoSections'
 import Navbar from './assets/components/Navbar/Navbar'
@@ -14,6 +15,7 @@ function App() {
         <InfoSections/>
         <Testimonials/>
         <SimpleAd/>
+        <Footer/>
     </main>
   )
 }
