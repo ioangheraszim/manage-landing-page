@@ -7,6 +7,7 @@ function SimpleAd() {
         <h2 className='ad-text'>Simplify how your team works today.</h2>
         <button className='btn-start btn-ad'>Get Started</button>
       </div>
+      <div className='background-blob'></div>
     </section>
   )
 }

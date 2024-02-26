@@ -9,7 +9,7 @@ import Testimonials from './assets/components/Testimonials/Testimonials'
 function App() {
 
   return (
-    <main className=''>
+    <main>
         <Navbar/>
         <HeroSection/>
         <InfoSections/>

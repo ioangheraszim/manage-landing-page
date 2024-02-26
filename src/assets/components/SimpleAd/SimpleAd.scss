@@ -6,21 +6,43 @@
     align-items: center;
     background-color: $bright-red;
     margin-top: 4rem;
-    padding: 3rem;
+    padding: 3rem .75rem;
+    position: relative;
+
+    .background-blob {
+        height: 400px;
+        width: 375px;
+        position: absolute;
+        top: -2.5rem;
+        left: 0;
+        background-image: url(/src/assets/images/bg-tablet-pattern.svg);
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position-x: -30rem;
+        background-position-y: 5rem;
+        opacity: .1;
+    }
 
     .content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        
     }
 
     .btn-ad {
+        cursor: pointer;
         background-color: white;
         color: $bright-red;
         font-weight: 700;
+        
     }
+
     .ad-text {
+        font-size: 2.1rem;
+        font-weight: 700;
+        text-align: center;
         color: white;
     }
 }
@@ -28,8 +50,13 @@
 @media (min-width: 835px) {
     .simplead-wrapper {
         
+        .background-blob {
+            display: none;
+        }
+
         .content {
             flex-direction: row;
+
         }
     }
     

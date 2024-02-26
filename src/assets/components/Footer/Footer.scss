@@ -2,4 +2,125 @@
 
 .footer-wrapper {
     background-color: $very-dark-blue;
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.5rem 0;
+
+        .logo-more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+
+            .logo {
+
+                img {
+                    width: 200px;
+                    margin: 2rem 0;
+                }
+            }
+
+            .socal-icons {
+                padding: 1rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a:hover {
+                    background-color: $bright-red;
+                }
+
+                img {
+                    width: 70px;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        .lists {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            margin: 3rem 0;
+
+            ul {
+
+                li {
+                    padding: .5rem 0;
+
+                    a {
+                        color: $dark-grayish-blue;
+                        text-decoration: none;
+                        padding: 1rem;
+                    }
+
+                    a:hover {
+                        color: $bright-red;
+                    }
+                }
+            }
+        }
+
+        .news-form {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .input-letter {
+                padding: 0.75rem 2rem;
+                border-radius: 1.5rem;
+                border: none;
+                outline: none;
+            }
+
+            .input-letter::placeholder {
+                color: $dark-grayish-blue;
+            }
+
+            .go-btn {
+                padding: .75rem 2rem;
+                margin-left: 1rem;
+                border: none;
+                outline: none;
+                border-radius: 1.5rem;
+                background-color: $bright-red;
+                color: white;
+            }
+        }
+    }
+
+    @media (min-width: 835px) { 
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+
+            .logo-more {
+                align-items: start;
+                flex-direction: column;
+                
+                .logo {
+                    width: 100%;
+
+                    img {
+                        width: 66%;
+                    }
+                }
+
+                .socal-icons {
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .lists {
+                margin: 1.5rem 0;
+            }
+        }
+    }
 }
