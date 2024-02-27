@@ -10,7 +10,8 @@ h2 {
     justify-content: center;
     flex-direction: column;
 }
-.slider-card {
+
+.slider-container {
   margin: 3rem 0;
 
   .slider {
@@ -44,7 +45,7 @@ h2 {
 }
 
 @media (min-width: 835px) {
-  .slider-card {
+  .slider-container {
     display: flex;
     justify-content: center;
     align-self: center;
