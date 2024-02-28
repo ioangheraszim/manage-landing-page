@@ -5,25 +5,29 @@ h2 {
 }
 
 .slider-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .slider-container {
-  margin: 3rem 0;
+  display: flex;
+  transition: transform .5s ease;
 
   .slider {
-    background-color: $very-light-gray;
     margin: 2rem 0;
     position: relative;
+    flex: 0 0 100%;
+    background: $very-light-gray;
 
     .the-image {
       position: absolute;
       top: -7rem;
-      left: 55%;
+      left: 50%;
       transform: translate(-50%, 50%);
+
       img {
         width: 75%;
       }
@@ -45,15 +49,21 @@ h2 {
 }
 
 @media (min-width: 835px) {
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+  }
+  
   .slider-container {
     display: flex;
     justify-content: center;
     align-self: center;
     justify-content: space-between;
-
+    width: 40%;
     .slider {
       margin: 1rem;
-      width: 70%;
     }
   }
 }
