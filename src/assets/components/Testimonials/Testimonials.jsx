@@ -24,6 +24,7 @@ function Testimonials() {
   }, [currentIndex]);
 
   return (
+    
     <section className="slider-wrapper">
       <h2>What the've said</h2>
         <div className="slider-container">

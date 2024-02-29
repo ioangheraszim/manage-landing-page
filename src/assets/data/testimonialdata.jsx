@@ -29,6 +29,5 @@ export default [
     comment: `Their software allows us to track, manage and collaborate on our projects from anywhere.
     It keeps the whole team in-sync without being intrusive.`,
     image: shanai
-
   },
 ];
